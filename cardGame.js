@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let btn = document.getElementById("start-button")
     btn.addEventListener("click", () =>{
         let body = document.getElementsByClassName("container")
-        body[0].innerHTML = "<h1>Crazy Eights</h1> <h3 id='turn'>Turn: Player "+(gamestate.turn+1)+"</h3> <div id='pile'></div> <div id='current-player'><div class='hand' id='p1-hand'></div></div> <div id='current-points'>Points: 0</div> <h3 id='declared-suit'>Declared Suit: "+gamestate.declaredSuit+"</h3>"
+        body[0].innerHTML = "<h1>Crazy Eights</h1> <h3 id='turn'>Turn: Player "+(gamestate.turn+1)+"</h3> <div id='pile'></div> <div id='current-player'><div class='hand' id='p1-hand'></div></div><h3 id='declared-suit'>Declared Suit: "+gamestate.declaredSuit+"</h3>"
         gamestate.round()
     })
 //make a new html file that implements carGame.js and just link start there so that i can at least see the html in the body lol
