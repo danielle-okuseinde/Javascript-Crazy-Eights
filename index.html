@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Card Game</title>
+</head>
+<body class="bg">
+    <div id="container" class="container">
+        <h1>Crazy Eights</h1>
+        <div id="instructions">
+            <p>Deal 5 cards one at a time, face down, beginning with the player to the left. The balance of the pack is placed face down in the center of the table and forms the stock. The dealer turns up the top card and places it in a separate pile; this card is the “starter.” If an eight is turned, it is buried in the middle of the pack and the next card is turned.</p>
+            <h3>The Play</h3>
+            <p>Starting to the dealer’s left, each player must place one card face up on the starter pile. Each card played (other than an eight) must match the card showing on the starter pile, either in suit or in denomination.
+
+                <br>Example: If the Q of Clubs is the starter, any club may be played on it or any Queen.<br>
+                
+                If unable to play, cards are drawn from the top of the stock until a play is possible, or until the stock is exhausted. If unable to play when the stock is exhausted, the player must pass. A player may draw from the stock, even though there may be a playable card in the player’s hand.
+                
+                All eights are wild! That is, an eight may be played at any time in turn, and the player need only specify a suit for it (but never a number). The next player must play either a card of the specified suit or an eight.</p>
+        </div>
+        <button type="input" class="btn btn-success" id="start-button">Start</button>
+    </div>
+    <script src="cardGame.js"></script>
+</body>
+</html>
