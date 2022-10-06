@@ -17,10 +17,6 @@ class Player{
         this.hand = []
         this.points
     }
-
-    updatePoints(){
-        //based on the cards in the hand update the number of points the player currently has
-    }
 }
 
 class Card{
@@ -120,26 +116,6 @@ class GameState{
     }
     // displays current players hand
     displayHands(){
-            // let hands = document.querySelectorAll("hand")
-            // let currentArea = document.getElementById("current-player")
-            // currentArea.innerHTML = ""
-            // currentArea.appendChild(hands[this.turn])
-
-            // let count = 1
-            // for(let i = 0; i < this.players.length; i++)
-            // {
-            //     if(i != this.turn)
-            //     {
-            //         let area = document.getElementById("player-"+count)
-            //         area.innerHTML = ""
-            //         area.appendChild(hands[i])
-            //         let p = this.players[i].hand.length
-            //         //add this many cards to the display (find an image for the back of a card)
-            //         count++
-            //     }
-                
-            // }
-    
             let addition = "" // += everything here and then add it to inner html at the end
             let hand = this.currentPlayer.hand
             let currentHand = document.getElementById("current-player")
